@@ -1,2 +1,2 @@
-# http://natours.github.io
+# https://christian-gama.github.io/natours/
 Made using pure CSS
