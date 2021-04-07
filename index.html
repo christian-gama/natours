@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natours</title>
+
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="./css/icon-fonts.css">
+    <link rel="stylesheet" href="css/icon-fonts.css">
     <link rel="stylesheet" href="./css/style.css">
+
+
 </head>
 
 <body class="container">
@@ -371,6 +374,67 @@
             </p>
         </footer>
     </main>
+
+    <div class="popup" id="popup">
+        <div class="popup__container">
+            <div class="popup__img-box">
+                <div>
+                    <img src="./img/nat-6.jpg" alt="" class="popup__img--1">
+                </div>
+                <div>
+                    <img src="./img/nat-8.jpg" alt="" class="popup__img--2">
+                </div>
+            </div>
+
+            <div class="popup__text-box">
+                <a href="#section-tour" class="popup__exit">&times;</a>
+                <h2 class="heading-secondary">Start booking now</h2>
+                <h4 class="popup__subtitle">Important - Please read these terms before booking</h3>
+
+                    <p class="popup__terms">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore
+                        magna aliqua. Sed
+                        sed risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio facilisis mauris sit amet
+                        massa
+                        vitae. Mi bibendum neque
+                        egestas congue. Placerat orci nulla pellentesque dignissim enim sit. Vitae semper quis lectus nulla at
+                        volutpat diam ut venenatis.
+                        Malesuada pellentesque elit eget gravida cum sociis natoque penati bus et. Proin fermentum leo vel
+                        orci
+                        porta
+                        non pulvinar neque laoreet. Gravida neque convallis a cras semper. Molestie at
+                        elementum eu facilisis sed odio morbi quis. Faucibus vitae aliquet nec ullamcorper sit amet risus
+                        nullam
+                        eget.
+                        Nam libero justo
+                        laoreet sit. Amet massa vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna
+                        etiam.
+                        Imperdiet sed
+                        euismod nisi porta.
+                    </p>
+            </div>
+            <div class="popup__button">
+                <a href="#section-tour" class="btn btn--green mt-2">Book now</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const checkedBox = document.querySelector('.navigation__checkbox');
+        checkedBox.addEventListener('click', () => {
+            if (checkedBox.checked) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'visible';
+            }
+        });
+    </script>
+    <script>
+        const event = document.body.addEventListener('click', (e) => {
+            console.log(e);
+        })
+    </script>
 </body>
 
 </html>
